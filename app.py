@@ -14,7 +14,7 @@ file = open("pickle/model.pkl","rb")
 gbc = pickle.load(file)
 file.close()
 
-class TestCalculaMedia(unittest.TestCase):
+class TestCheckURL(unittest.TestCase):
     def test_1(self):
         resultado = check_url("https://ellibrodepython.com/python-testing")
         self.assertGreater(resultado, 0.8)
